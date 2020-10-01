@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Enqueue scripts and styles.
+ */
 function script_setup() {
 wp_enqueue_style( 'main-style', get_stylesheet_uri() ); //default
 
@@ -9,5 +12,135 @@ wp_enqueue_script('script',  get_template_directory_uri() . '/dist/js/bundle.js'
 };
 
 add_action( 'wp_enqueue_scripts', 'script_setup' );
+
+/**
+ * Essential theme supports
+ * */
+function theme_setup(){
+    /** automatic feed link*/
+    add_theme_support( 'automatic-feed-links' );
+    load_theme_textdomain( 'medardstore', get_template_directory() . '/languages' );
+ 
+    /** tag-title **/
+    add_theme_support( 'title-tag' );
+ 
+    /** post formats */
+    $post_formats = array('aside','image','gallery','video','audio','link','quote','status');
+    add_theme_support( 'post-formats', $post_formats);
+ 
+    /** post thumbnail **/
+    add_theme_support( 'post-thumbnails' );
+    //Add support for block styles
+    add_theme_support( 'wp-block-styles' );
+    // Add support for full and wide align images.
+	add_theme_support( 'align-wide' );
+
+    // Add support for editor styles.
+    add_theme_support( 'editor-styles' );
+
+    // Enqueue editor styles.
+    add_editor_style( 'style-editor.css' );
+    /** HTML5 support **/
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+ 
+    /** refresh widgest **/
+    add_theme_support( 'customize-selective-refresh-widgets' );
+
+    add_theme_support( 'align-wide' );
+    add_theme_support( 'editor-styles' );
+    add_theme_support( 'align-wide' );
+ 
+    /** custom background **/
+    $bg_defaults = array(
+        'default-image'          => '',
+        'default-preset'         => 'default',
+        'default-size'           => 'cover',
+        'default-repeat'         => 'no-repeat',
+        'default-attachment'     => 'scroll',
+    );
+    add_theme_support( 'custom-background', $bg_defaults );
+ 
+    /** custom header **/
+    $header_defaults = array(
+        'default-image'          => '',
+        'width'                  => 300,
+        'height'                 => 60,
+        'flex-height'            => true,
+        'flex-width'             => true,
+        'default-text-color'     => '',
+        'header-text'            => true,
+        'uploads'                => true,
+    );
+    add_theme_support( 'custom-header', $header_defaults );
+ 
+    /** custom log **/
+    add_theme_support( 'custom-logo', array(
+        'height'      => 60,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    ) );
+
+    // Add custom editor font sizes.
+		add_theme_support(
+			'editor-font-sizes',
+			array(
+				array(
+					'name'      => __( 'Small', 'medardstore' ),
+					'shortName' => __( 'S', 'medardstore' ),
+					'size'      => 19.5,
+					'slug'      => 'small',
+				),
+				array(
+					'name'      => __( 'Normal', 'medardstore' ),
+					'shortName' => __( 'M', 'medardstore' ),
+					'size'      => 22,
+					'slug'      => 'normal',
+				),
+				array(
+					'name'      => __( 'Large', 'medardstore' ),
+					'shortName' => __( 'L', 'medardstore' ),
+					'size'      => 36.5,
+					'slug'      => 'large',
+				),
+				array(
+					'name'      => __( 'Huge', 'medardstore' ),
+					'shortName' => __( 'XL', 'medardstore' ),
+					'size'      => 49.5,
+					'slug'      => 'huge',
+				),
+			)
+		);
+
+		// Editor color palette.
+		add_theme_support(
+			'editor-color-palette',
+			array(
+				array(
+					'name'  => __( 'Dark Gray', 'medardstore' ),
+					'slug'  => 'dark-gray',
+					'color' => '#111',
+				),
+				array(
+					'name'  => __( 'Light Gray', 'medardstore' ),
+					'slug'  => 'light-gray',
+					'color' => '#767676',
+				),
+				array(
+					'name'  => __( 'White', 'medardstore' ),
+					'slug'  => 'white',
+					'color' => '#FFF',
+				),
+			)
+		);
+
+		// Add support for responsive embedded content.
+		add_theme_support( 'responsive-embeds' );
+ 
+ 
+ 
+}
+add_action('after_setup_theme','theme_setup');
 
 ?>
