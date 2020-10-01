@@ -17,9 +17,9 @@ exports.sass = () =>
 
 exports.sassEditor = () =>
   gulp
-    .src("./src/scss/styles-editor.scss")
+    .src("./src/scss/style-editor.scss")
     .pipe(sass(sassOptions))
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./"))
     .pipe(browserSync.reload({ stream: true }));
 
 exports.images = () =>
