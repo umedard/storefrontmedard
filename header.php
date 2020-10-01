@@ -10,4 +10,5 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<div class="test">t</div>
+<h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+<h3><?php bloginfo( 'description' ); ?></h3>
