@@ -10,9 +10,20 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header>
+<header class="header">
 
-<h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-<h3><?php bloginfo( 'description' ); ?></h3>
+<div class="sectioncontainer">
+    <h1 class="header__title"><a  href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+    <h3 class="header__description"><?php bloginfo( 'description' ); ?></h3>
+    <div class="header__bar"></div>
+    <nav class="header__menu">
+        <?php
+            wp_nav_menu( array( 
+                'theme_location' => 'topmenu', 
+                'container_class' => 'topmenu' ) ); 
+            ?>
+    </nav>
+</div>
 
+<hr>
 </header>

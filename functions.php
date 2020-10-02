@@ -143,4 +143,15 @@ function theme_setup(){
 }
 add_action('after_setup_theme','theme_setup');
 
+
+function wpb_custom_new_menu() {
+  register_nav_menus(
+    array(
+      'topmenu' => __( 'TopMenu' ),
+      'mobilemenu' => __( 'MobileMenu' )
+    )
+  );
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
 ?>

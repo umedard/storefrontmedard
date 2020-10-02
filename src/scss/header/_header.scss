@@ -1,0 +1,35 @@
+.header__title {
+  font-size: 3rem;
+  width: 100%;
+}
+
+.header__title a {
+  text-decoration: none;
+  color: $main-color-black;
+}
+
+.header__title a:hover {
+  color: $main-color-blue;
+}
+
+.header__description {
+  font-size: 1.125rem;
+  width: 100%;
+  color: $main-color-grey;
+}
+
+.header__bar {
+  width: 100%;
+  border-top: 2px solid black;
+  color: $main-color-black;
+}
+
+.header__description,
+.header__title,
+.header__bar,
+.header__menu {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+}
