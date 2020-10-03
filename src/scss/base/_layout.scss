@@ -1,5 +1,21 @@
-.sectioncontainer {
+.section__container {
   max-width: $desktop_width;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.section__content {
+  background-color: $content-background;
+  padding: $gap 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: $gap;
+}
+
+.main__content,
+.main__wrapper {
+  border: 1px dashed orange;
 }

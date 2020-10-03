@@ -12,7 +12,7 @@
 
 <header class="header">
 
-<div class="sectioncontainer">
+<div class="section__container">
     <h1 class="header__title"><a  href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     <h3 class="header__description"><?php bloginfo( 'description' ); ?></h3>
     <div class="header__bar"></div>
@@ -24,6 +24,4 @@
             ?>
     </nav>
 </div>
-
-<hr>
 </header>

@@ -1,0 +1,49 @@
+.homepage {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  background-color: white;
+}
+
+.homepage__text {
+  padding: $gap;
+}
+
+.homepage__text div {
+  padding: 10px 0;
+}
+
+// icons
+
+[class^="homepage__icon_"] {
+  padding-right: 20px;
+}
+[class^="homepage__icon_"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: $main-color-blue;
+  padding-right: 6px;
+}
+
+.homepage__icon_author::before {
+  content: "\f007";
+}
+.homepage__icon_category::before {
+  content: "\f07b";
+}
+.homepage__icon_date::before {
+  content: "\f073";
+}
+
+.homepage__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: $main-color-black;
+}
+
+// IMG background
+
+.homepage__img {
+  background-position: center;
+}

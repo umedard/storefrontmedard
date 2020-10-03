@@ -7,6 +7,7 @@ function script_setup() {
 wp_enqueue_style( 'main-style', get_stylesheet_uri() ); //default
 
 wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/dist/css/styles.css' ); //our stylesheet
+wp_enqueue_style( 'fa', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css' ); //fa stylesheet
 wp_enqueue_script('script',  get_template_directory_uri() . '/dist/js/bundle.js');
 
 };
@@ -153,5 +154,14 @@ function wpb_custom_new_menu() {
   );
 }
 add_action( 'init', 'wpb_custom_new_menu' );
+
+
+//enable dashicons in frontend
+add_action( 'wp_enqueue_scripts', 'load_dashicons' );
+function load_dashicons() {
+ wp_enqueue_style( 'dashicons' );
+}
+
+
 
 ?>
