@@ -35,7 +35,7 @@ div.topmenu .children {
   left: 0;
   top: 100%;
   z-index: 1;
-  background: white;
+  background: $main-color-white;
   min-width: 200px;
   display: none;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
@@ -58,7 +58,7 @@ div.topmenu .children .children {
   position: absolute;
   left: 100%;
   top: 0;
-  background: white;
+  background: $main-color-white;
 }
 
 // current link
