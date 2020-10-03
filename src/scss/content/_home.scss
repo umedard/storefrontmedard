@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 2.5fr 2fr;
   background-color: white;
+  box-shadow: $box-shadow-grey;
 }
 
 .homepage__text {
@@ -40,6 +41,17 @@
   text-transform: uppercase;
   line-height: 1.4;
   color: $main-color-black;
+}
+
+.homepage__more {
+  margin-top: 10px;
+  background-color: black;
+  width: 90px;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 // IMG background
