@@ -4,6 +4,7 @@
 @import "./base/_text-selection";
 @import "./_print";
 @import "./base/_layout";
+@import "./base/_mixins";
 
 // partials
 
@@ -12,3 +13,6 @@
 @import "./sidebar/sidebar";
 // content
 @import "./content/archive";
+@import "./content/single";
+@import "./content/page";
+@import "./content/content";

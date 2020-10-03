@@ -1,0 +1,13 @@
+.content-single {
+  @include content-wrapper;
+  padding: $gap;
+}
+
+.content-single__title {
+  @include main-title;
+  @include singular-title;
+}
+
+.content-single__content {
+  @include singular-content;
+}
