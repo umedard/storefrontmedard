@@ -1,5 +1,4 @@
-<div class="content-page">
-            <div class="content-archive__img" style="background-image: url('<?php bloginfo('template_url') ?>/dist/images/coffee.jpg'); " ></div>
+<div class="content-single">
             <div>
                 <p class="content-single__title"><?php the_title()?></p>
 
@@ -36,6 +35,8 @@
                     <span>Posted in </span> <?php show_categories(); ?>
                     <span class="content-single__separator"> &#8226; </span>
                     <span>Tagged </span> <?php show_tags(); ?>
+                   
                 </div>
             </div>
+   
 </div>

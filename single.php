@@ -10,6 +10,7 @@
                 while ( have_posts() ) {
                     the_post();
                     get_template_part( 'template-parts/content/content', 'single' );
+                     
                 }
 
             } else {
@@ -19,6 +20,18 @@
             }
             ?>
             <!-- content -->
+            <div class="content-single pagination__wrapper">
+                    <?php 
+
+               
+                    if($link = get_next_post_link()) {
+                        next_post_link( '<div><p> PREV</p>%link</div>' );
+                    }
+                    if($link = get_previous_post_link()) {
+                        previous_post_link( '<div><p> NEXT</p>%link</div>' );
+                    }
+                    ?>
+            </div>
         </div>
 
         <div><?php get_sidebar(); ?></div>

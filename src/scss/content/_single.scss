@@ -19,6 +19,7 @@
   justify-content: center;
 }
 
+// categories
 .content-single__categories {
   padding: $gap 0 0;
   display: flex;
@@ -33,4 +34,36 @@
 
 .content-single__separator {
   padding: 0 $gap/2;
+}
+
+// pagination
+
+.pagination__wrapper {
+  margin-top: $gap;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-around;
+  p {
+    text-transform: uppercase;
+    color: $main-color-blue;
+    padding-bottom: $gap/2;
+    font-size: $font-size-big;
+    font-weight: 700;
+  }
+  div {
+    height: 100%;
+    width: 100%;
+  }
+  div:last-of-type {
+    border-left: 1px solid $main-color-light-grey;
+    padding-left: $gap;
+  }
+
+  a {
+    color: $main-color-grey;
+    text-decoration: none;
+    &:hover {
+      color: $main-color-blue;
+    }
+  }
 }
