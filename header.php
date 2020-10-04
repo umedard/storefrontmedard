@@ -24,4 +24,12 @@
             ?>
     </nav>
 </div>
+<?php 
+if(!is_home() || !is_singular()) {
+    the_title();
+} else {
+    echo "sfsdf";
+}
+
+?>
 </header>

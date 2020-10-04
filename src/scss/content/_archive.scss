@@ -17,6 +17,11 @@
   padding: 10px 0;
 }
 
+.content-archive__icon_category a {
+  color: $main-color-grey;
+  text-decoration: none;
+}
+
 // icons
 
 [class^="content-archive__icon_"] {
@@ -78,6 +83,23 @@
 
 // IMG background
 
+.content-archive__img_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .content-archive__img {
   background-position: center;
+  transition: all 0.4s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.content-archive__img:hover {
+  transform: scale(1.1) rotate(1deg);
 }

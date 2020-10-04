@@ -12,7 +12,7 @@
                 foreach($recent_posts as $post) : ?>
                     <li>
                         <a href="<?php echo get_permalink($post['ID']) ?>">
-                            <?php echo get_the_post_thumbnail($post['ID'], 'full'); ?>
+                            <?php // echo get_the_post_thumbnail($post['ID'], 'full'); ?>
                             
                             <p><?php echo $post['post_title'] ?></p>
                         </a>

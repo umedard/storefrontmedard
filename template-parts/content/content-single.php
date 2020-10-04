@@ -1,5 +1,18 @@
-<div class="content-single">
+
+<?php
+
+                if(get_field('image')) {
+                   
+                    echo ' <div class="content-single__img" style="background-image: url(' . get_field('image') . '); " ></div>
+';
+                    
+                }
+                
+                ?>
+                
+                <div class="content-single">
             <div>
+                
                 <p class="content-single__title"><?php the_title()?></p>
 
              
@@ -27,14 +40,18 @@
                             foreach ($post_tags as $tag) {
                                 $output .= '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>' . $separator;
                             }
-                            echo trim($output, $separator);
+                            echo 'Tagged' . trim($output, $separator);
                         }
                     }
                     ?>
 
                     <span>Posted in </span> <?php show_categories(); ?>
-                    <span class="content-single__separator"> &#8226; </span>
-                    <span>Tagged </span> <?php show_tags(); ?>
+                    <?php 
+                    if(get_the_tags()) {
+                        echo ' <span class="content-single__separator"> &#8226; </span>';
+                    }
+                   ?>
+                    <span></span> <?php show_tags(); ?>
                    
                 </div>
             </div>
