@@ -23,13 +23,16 @@
                 'container_class' => 'topmenu' ) ); 
             ?>
     </nav>
+
+   
 </div>
-<?php 
-if(!is_home() || !is_singular()) {
-    the_title();
-} else {
-    echo "sfsdf";
+ <?php 
+if(get_query_var('cat') || get_query_var('tag')) {
+    echo '<div class="header__categories"><p>';
+    single_term_title(  );
+    echo '</p></div>';
 }
 
 ?>
+
 </header>

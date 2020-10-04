@@ -1,0 +1,9 @@
+.footer__wrapper {
+  background-color: $main-color-black;
+  color: $main-color-light-grey;
+  padding: $gap * 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-small;
+}

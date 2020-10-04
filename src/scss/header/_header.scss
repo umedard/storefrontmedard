@@ -34,3 +34,16 @@
   flex-flow: nowrap row;
   justify-content: center;
 }
+
+.header__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color-white;
+  padding: $gap;
+  font-size: $font-size-big;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main-color-black;
+  border-top: 1px solid $main-color-light-grey;
+}
