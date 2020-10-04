@@ -4,7 +4,22 @@
     <div class="section__container main">
         <div class="content-archive__content">
             <!-- content starts -->
-            Try again
+            <?php
+            if ( have_posts() ) {
+
+                while ( have_posts() ) {
+                    the_post();
+                    get_template_part( 'template-parts/content/content', 'archive' );
+                }
+
+            } else {
+
+                get_template_part( 'template-parts/content/content', 'none' );
+
+            }
+            ?>
+            
+            <!-- content -->
         </div>
             
         <div><?php get_sidebar(); ?></div>
