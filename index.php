@@ -17,6 +17,12 @@
                 get_template_part( 'template-parts/content/content', 'none' );
 
             }
+            the_posts_pagination( array(
+                'mid_size'  => 2,
+                'prev_text' => __( '<', 'textdomain' ),
+                'next_text' => __( '>', 'textdomain' ),
+                'class' => 'pagination__container'
+            ) ); 
             ?>
             
             <!-- content -->
