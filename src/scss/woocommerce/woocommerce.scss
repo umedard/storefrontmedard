@@ -14,22 +14,34 @@
   .main {
     grid-template-columns: 1fr;
   }
+
+  // product button
+  .products .product a.add_to_cart_button,
+  .button.single_add_to_cart_button.button.alt {
+    border-radius: 7px;
+    background-color: $main-color-black;
+    color: $main-color-white;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $main-color-blue !important;
+      color: $main-color-white !important;
+    }
+  }
+
+  div.product p.price,
+  .woocommerce div.product span.price {
+    color: $main-color-blue-light;
+  }
 }
 
 // show product images
 .woocommerce span.onsale {
-  background-color: orange;
+  background-color: $main-color-blue;
 }
 
 .woocommerce div.product div.images.woocommerce-product-gallery {
   opacity: 1 !important;
-}
-
-a.button,
-button.button,
-input.button,
-#review_form #submit {
-  background: black;
 }
 
 //  set padding main
