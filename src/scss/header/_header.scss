@@ -1,6 +1,6 @@
 .header__title {
-  font-size: 3rem;
   width: 100%;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .header__description {
-  font-size: 1.125rem;
   width: 100%;
+  font-size: 1.125rem;
   color: $main-color-grey;
 }
 
@@ -30,18 +30,18 @@
 .header__title,
 .header__bar,
 .header__menu {
-  margin: 20px 0;
   display: flex;
   flex-flow: nowrap row;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .header__categories {
   display: flex;
+  padding: $gap;
   justify-content: center;
   align-items: center;
   background-color: $main-color-white;
-  padding: $gap;
   font-size: $font-size-big;
   font-weight: 700;
   text-transform: uppercase;

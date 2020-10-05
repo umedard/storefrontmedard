@@ -11,9 +11,9 @@
 
 // title
 .sidebar__title {
+  margin-bottom: $gap/2;
   font-size: $font-size-big;
   color: $main-color-black;
-  margin-bottom: $gap/2;
   text-transform: uppercase;
   font-weight: 700;
 }

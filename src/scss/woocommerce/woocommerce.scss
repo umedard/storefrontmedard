@@ -31,3 +31,11 @@ input.button,
 #review_form #submit {
   background: black;
 }
+
+//  set padding main
+.content-page .site-main {
+  padding: 0 $gap/2;
+  a {
+    color: $main-color-grey;
+  }
+}

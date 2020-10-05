@@ -29,12 +29,6 @@ exports.images = () =>
     .pipe(gulp.dest("./dist/images"))
     .pipe(browserSync.reload({ stream: true }));
 
-exports.copy = () =>
-  gulp
-    .src("./src/*.html")
-    .pipe(gulp.dest("./dist"))
-    .pipe(browserSync.reload({ stream: true }));
-
 exports.minifycss = () =>
   gulp
     .src("./dist/styles.css")
@@ -63,20 +57,10 @@ exports.packjs = () =>
     .pipe(gulp.dest("./dist/js"));
 
 gulp.task("serve", () => {
-  browserSync.init({
-    server: {
-      baseDir: "./dist",
-      index: "index.html",
-    },
-    notify: false,
-    injectChanges: true,
-  });
   gulp.watch("./src/scss/**/*", gulp.series("sass"));
   gulp.watch("./src/scss/**/*", gulp.series("sassEditor"));
   gulp.watch("./src/images/**/*", gulp.series("images"));
-  gulp.watch("./src/*.html", gulp.series("copy"));
   gulp.watch("./src/js/*.js", gulp.series("packjs"));
-  gulp.watch("./dist/*").on("change", browserSync.reload);
 });
 
 gulp.task("default", gulp.series("serve"));

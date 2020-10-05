@@ -1,6 +1,5 @@
 @import "./_variables";
 @import "./base/_reset";
-@import "./base/_text-selection";
 @import "./_print";
 @import "./base/_layout";
 @import "./base/_mixins";
@@ -13,8 +12,10 @@
 @import "./pagination/pagination";
 @import "./footer/footer";
 
-@import "./woocommerce/woocommerce.scss";
 @import "./content/archive";
 @import "./content/single";
 @import "./content/page";
-@import "./content/content";
+
+// woocommercd
+@import "./woocommerce/woocommerce.scss";
+@import "./base/media";

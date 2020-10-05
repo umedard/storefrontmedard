@@ -9,8 +9,8 @@
 }
 
 @mixin singular-title {
-  padding: 0 0 $gap/3 0;
   display: flex;
+  padding: 0 0 $gap/3 0;
   justify-content: center;
 }
 
