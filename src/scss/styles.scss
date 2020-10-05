@@ -12,7 +12,8 @@
 @import "./sidebar/sidebar";
 @import "./pagination/pagination";
 @import "./footer/footer";
-// content
+
+@import "./woocommerce/woocommerce.scss";
 @import "./content/archive";
 @import "./content/single";
 @import "./content/page";

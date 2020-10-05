@@ -1,0 +1,33 @@
+// removes sidebar on woocommerce pages
+.woocommerce-page {
+  .sidebar {
+    display: none;
+  }
+  .pagination__wrapper,
+  .content-single__postinfo,
+  .sidebar,
+  .content-single__categories,
+  .content-single__img {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+// show product images
+.woocommerce span.onsale {
+  background-color: orange;
+}
+
+.woocommerce div.product div.images.woocommerce-product-gallery {
+  opacity: 1 !important;
+}
+
+a.button,
+button.button,
+input.button,
+#review_form #submit {
+  background: black;
+}
