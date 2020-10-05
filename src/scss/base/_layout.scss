@@ -14,3 +14,14 @@
   grid-template-columns: 2fr 1fr;
   column-gap: $gap;
 }
+
+// removes sidebar on woocommerce pages
+.woocommerce-page {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
