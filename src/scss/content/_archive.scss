@@ -11,15 +11,9 @@
 
 .content-archive__text {
   padding: $gap;
-}
-
-.content-archive__text div {
-  padding: 10px 0;
-}
-
-.content-archive__icon_category a {
-  color: $main-color-grey;
-  text-decoration: none;
+  div {
+    padding: 10px 0;
+  }
 }
 
 // icons
@@ -34,17 +28,20 @@
   color: $main-color-blue;
 }
 
-.content-archive__icon_author::before {
-  content: "\f007";
-}
-.content-archive__icon_category::before {
-  content: "\f07b";
-}
-.content-archive__icon_date::before {
-  content: "\f073";
+$icons: (
+  "author": "\f007",
+  "category": "\f07b",
+  "date": "\f073",
+);
+
+@each $name, $glyph in $icons {
+  .content-archive__icon_#{$name}::before {
+    content: $glyph;
+  }
 }
 
-.content-archive__icon_author a {
+.content-archive__icon_author a,
+.content-archive__icon_category a {
   color: $main-color-grey;
   text-decoration: none;
 }
@@ -61,6 +58,7 @@
   }
 }
 
+// button
 .content-archive__more {
   margin-top: 10px;
   width: 90px;
@@ -98,8 +96,7 @@
   background-position: center;
   background-size: cover;
   transition: all 0.4s;
-}
-
-.content-archive__img:hover {
-  transform: scale(1.1) rotate(1deg);
+  &:hover {
+    transform: scale(1.1) rotate(1deg);
+  }
 }

@@ -181,4 +181,37 @@ function add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'add_woocommerce_support' );
 
-?>
+
+
+/*****************************************************************************
+wpmu_posted_on - add dates on single posts
+*****************************************************************************/
+
+function medard_display_date() {
+		 echo '
+		<section class="footer__date">
+			'  . get_the_date("Y") . '
+    </section>
+    ';
+		
+
+}
+
+// add filer
+
+function change_filter($text) {
+  $text = '<h3>' . $text . ' </h3>';
+  return strtoupper($text);
+}
+
+add_filter("wpmu_filter_hook", "change_filter");
+
+
+// // action
+
+// function change_action() {
+//   echo "Hello";
+// }
+
+// add_action("wpmu_before_content", "change_action");
+
