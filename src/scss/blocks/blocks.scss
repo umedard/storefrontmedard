@@ -1,0 +1,15 @@
+.has-darkblue-color {
+  color: $main-color-blue;
+}
+
+.content-single__contentwrapper {
+  p {
+    padding-bottom: $gap/2;
+  }
+  .quote {
+    display: block;
+    margin-left: 40px;
+    padding-left: $gap/2;
+    border-left: 3px solid $main-color-blue;
+  }
+}
