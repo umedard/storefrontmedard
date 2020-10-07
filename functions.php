@@ -133,6 +133,11 @@ function theme_setup(){
 					'slug'  => 'white',
 					'color' => '#FFF',
 				),
+				array(
+					'name'  => __( 'Dark Blue', 'medardstore' ),
+					'slug'  => 'darkblue',
+					'color' => '#208de5',
+				)
 			)
 		);
 
