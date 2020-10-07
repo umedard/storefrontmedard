@@ -13,7 +13,7 @@
                 <div class="content-single">
             <div>
                 
-                <p class="content-single__title"><?php the_title()?></p>
+                <h1 class="content-single__title"><?php the_title()?></h1>
 
              
                 <div class="content-single__postinfo">
@@ -21,7 +21,7 @@
                     <span class="content-archive__icon_date"><?php the_date() ?></span>
                 </div>
 
-                <div class="content-single__contentwrapper"><?php the_content() ?></div>
+                <article class="content-single__contentwrapper"><?php the_content() ?></article>
                 <div class="content-single__categories">
                     <?php 
                     

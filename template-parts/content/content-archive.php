@@ -1,4 +1,4 @@
-<div class="content-archive">
+<article class="content-archive">
             <div class="content-archive__text">
                 <div><span class="content-archive__icon_date"><?php the_date() ?></span><span class="content-archive__icon_category">
                     <?php 
@@ -9,7 +9,7 @@
                     ?>
                 
                 </span></div>
-                <div class="content-archive__title"><?php echo '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' ?></div>
+                <div class="content-archive__title"><h2><?php echo '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' ?></h2></div>
                 <div><span class="content-archive__icon_author">by <?php the_author_link();  ?></span></div>
                 <div><?php the_excerpt() ?></div>
                 <div class="content-archive__more"><a href="<?php echo get_permalink() ?>">Read More </a></div>
@@ -32,5 +32,5 @@
 
 
       
-</div>
+            </article>
 
