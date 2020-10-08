@@ -8,10 +8,11 @@
 
 @import "./header/header";
 @import "./navigation/navbar";
+@import "./navigation/_navbar_mobile";
 @import "./sidebar/sidebar";
 @import "./pagination/pagination";
 @import "./footer/footer";
-@import "./blocks/blocks";
+@import "./blocks/style-content";
 
 // content
 @import "./content/archive";

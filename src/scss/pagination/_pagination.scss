@@ -8,7 +8,7 @@
     background-color: $main-color-white;
     color: $main-color-grey;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all $transition;
     &:hover {
       background-color: $main-color-blue;
       color: $main-color-white;

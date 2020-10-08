@@ -24,3 +24,8 @@
     transform: translateY(5px);
   }
 }
+
+.woocommerce-privacy-policy-text .woocommerce-privacy-policy-link,
+.woocommerce-LostPassword a {
+  color: $main-color-grey;
+}

@@ -1,0 +1,23 @@
+body,
+html {
+  position: relative;
+  margin-top: 0 !important;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  margin-top: 0;
+  padding-top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  z-index: 9999;
+}
+
+.mobile-menuu {
+  background-color: black;
+  height: 100%;
+  width: 375px;
+  border-right: 40px;
+  color: white;
+}

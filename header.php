@@ -7,6 +7,11 @@
     <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?>>
+<div class="overlay">
+    <div class="mobile-menuu">    overlat
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem praesentium quae, delectus neque a atque commodi voluptatum quis repudiandae laborum, quo recusandae ab non fugiat eligendi nulla rerum omnis.
+</div>
+</div>
 <?php wp_body_open(); ?>
 
 <header class="header">

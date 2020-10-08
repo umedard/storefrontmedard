@@ -15,7 +15,7 @@ div.topmenu a {
   font-weight: 700;
   font-size: 0.9rem;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: all $transition;
 }
 
 div.topmenu a:hover {

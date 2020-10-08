@@ -120,13 +120,13 @@ function theme_setup(){
 			array(
 				array(
 					'name'  => __( 'Dark Gray', 'medardstore' ),
-					'slug'  => 'dark-gray',
-					'color' => '#111',
+					'slug'  => 'darkgray',
+					'color' => '#4d4d4d',
 				),
 				array(
 					'name'  => __( 'Light Gray', 'medardstore' ),
-					'slug'  => 'light-gray',
-					'color' => '#767676',
+					'slug'  => 'lightgray',
+					'color' => '#a6a6a6',
 				),
 				array(
 					'name'  => __( 'White', 'medardstore' ),

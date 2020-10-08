@@ -6,7 +6,7 @@
     background-color: $main-color-black;
     color: $main-color-white;
     font-size: 12px;
-    transition: all 0.3s ease;
+    transition: all $transition ease;
     &:hover {
       background-color: $main-color-blue !important;
       color: $main-color-white !important;
