@@ -7,15 +7,31 @@
     <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="overlay">
-    <div class="mobile-menuu">    overlat
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem praesentium quae, delectus neque a atque commodi voluptatum quis repudiandae laborum, quo recusandae ab non fugiat eligendi nulla rerum omnis.
-</div>
-</div>
+
+
 <?php wp_body_open(); ?>
 
-<header class="header">
+<div class="menu-mobile">
+    <div class="menu-mobile__wrapper">
+        <div class="menu-mobile__item"> <i id="closeMenu" class="mobile-menu__close-button fas fa-times"></i>
+    
+        <?php
 
+        wp_nav_menu( array( 
+                'theme_location' => 'topmenu', 
+                'container_class' => 'mobile-nav' ) ); 
+            ?>
+
+          
+    
+    
+    </div>
+    </div>
+</div>
+
+
+<h1 > <i id="menutrigger" class="fas fa-bars"></i> </h1>
+<header class="header" >
 <div class="section__container">
     <h1 class="header__title"><a  href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     <h3 class="header__description"><?php bloginfo( 'description' ); ?></h3>
