@@ -55,4 +55,18 @@
   .menu-mobile__item {
     width: 300px;
   }
+
+  .content-archive__text,
+  .sidebar__box,
+  .content-single {
+    padding: $gap/2;
+  }
+  .sidebar,
+  .main {
+    gap: $gap/2;
+  }
+
+  .section__content {
+    padding: $gap/2 0;
+  }
 }
