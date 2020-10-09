@@ -29,13 +29,14 @@
     </div>
 </div>
 
+<div class="top"> <h1 > MENU <i id="menutriggers" >dfasfd</i> </h1></div>
 
-<h1 > <i id="menutrigger" class="fas fa-bars"></i> </h1>
 <header class="header" >
 <div class="section__container">
     <h1 class="header__title"><a  href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     <h3 class="header__description"><?php bloginfo( 'description' ); ?></h3>
     <div class="header__bar"></div>
+    <div id="menutrigger" class="menu-trigger"> <div>MENU <i  class="fas fa-bars"></i> </div></div>
     <nav class="header__menu">
         <?php
             wp_nav_menu( array( 

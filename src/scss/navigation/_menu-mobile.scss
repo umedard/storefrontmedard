@@ -36,7 +36,7 @@
     display: none;
     z-index: 1;
     padding: 8px 0;
-    padding-left: 12px;
+    padding-left: $gap;
     min-width: 200px;
     // position: absolute;
     // left: 0;
@@ -44,7 +44,6 @@
     background: $main-color-black;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     transform: translateX(-13px);
-    border: 1px solid red;
   }
   div.mobile-nav li:hover > .sub-menu,
   div.mobile-nav li:hover > .children {
