@@ -26,12 +26,9 @@
 // body overflow toggle
 .overlay {
   overflow: hidden !important;
+  position: relative;
 }
 
-// trigger
-#menutrigger {
-  border: 1px solid orange;
-}
 // close icon
 .mobile-menu__close-button::before {
   position: absolute;
@@ -46,4 +43,18 @@
   background-color: $main-color-grey;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.top {
+  visibility: hidden;
+}
+
+.menu-trigger {
+  color: $main-color-black;
+  font-weight: 700;
+  justify-content: center;
+  i {
+    padding-left: 10px;
+  }
+  display: none;
 }
