@@ -9,13 +9,13 @@
 }
 .menu-mobile__wrapper {
   position: absolute;
-  height: 100vh;
+  height: 300vh;
   width: 100%;
   overflow: hidden;
   background-color: rgba($color: black, $alpha: 0.2);
 }
 .menu-mobile__item {
-  height: 100vh;
+  height: 300vh;
   background-color: $main-color-black;
   color: $main-color-white;
   width: 400px;
@@ -27,6 +27,7 @@
 .overlay {
   overflow: hidden !important;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 // close icon
@@ -53,8 +54,13 @@
   color: $main-color-black;
   font-weight: 700;
   justify-content: center;
-  i {
-    padding-left: 10px;
+  a {
+    color: $main-color-black;
+    text-decoration: none;
+    i {
+      padding-left: 10px;
+    }
   }
+
   display: none;
 }

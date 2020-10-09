@@ -6,7 +6,7 @@
     <meta name="description" content="<?php the_excerpt(); ?>" />
     <?php wp_head() ?>
 </head>
-<body <?php body_class(); ?>>
+<body id="top" <?php body_class(); ?>>
 
 
 <?php wp_body_open(); ?>
@@ -29,14 +29,14 @@
     </div>
 </div>
 
-<div class="top"> <h1 > MENU <i id="menutriggers" >dfasfd</i> </h1></div>
+<div class="top"> <h1 > <i id="menutriggers" ></i> </h1></div>
 
 <header class="header" >
 <div class="section__container">
     <h1 class="header__title"><a  href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     <h3 class="header__description"><?php bloginfo( 'description' ); ?></h3>
     <div class="header__bar"></div>
-    <div id="menutrigger" class="menu-trigger"> <div>MENU <i  class="fas fa-bars"></i> </div></div>
+    <div id="menutrigger" class="menu-trigger"> <a href="#top">MENU <i  class="fas fa-bars"></i> </a></div>
     <nav class="header__menu">
         <?php
             wp_nav_menu( array( 
