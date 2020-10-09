@@ -17,7 +17,7 @@ exports.sass = () =>
 
 exports.sassEditor = () =>
   gulp
-    .src("./src/scss/style-editor.scss")
+    .src("./src/scss/blocks/style-editor.scss")
     .pipe(sass(sassOptions))
     .pipe(gulp.dest("./"))
     .pipe(browserSync.reload({ stream: true }));

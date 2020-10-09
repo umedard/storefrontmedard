@@ -1,0 +1,30 @@
+@media all and (max-width: $tablet_width) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: $gap;
+  }
+
+  .content-archive {
+    display: grid;
+    grid-template-columns: 3.5fr 2fr;
+  }
+}
+
+@media all and (max-width: $mobile_width) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: $gap;
+  }
+
+  .content-archive {
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 200px 1fr;
+  }
+
+  a.content-archive__img_wrapper {
+    grid-row: 1/2;
+  }
+  .content-single__img {
+    height: 200px;
+  }
+}

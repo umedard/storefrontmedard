@@ -120,19 +120,24 @@ function theme_setup(){
 			array(
 				array(
 					'name'  => __( 'Dark Gray', 'medardstore' ),
-					'slug'  => 'dark-gray',
-					'color' => '#111',
+					'slug'  => 'darkgray',
+					'color' => '#4d4d4d',
 				),
 				array(
 					'name'  => __( 'Light Gray', 'medardstore' ),
-					'slug'  => 'light-gray',
-					'color' => '#767676',
+					'slug'  => 'lightgray',
+					'color' => '#a6a6a6',
 				),
 				array(
 					'name'  => __( 'White', 'medardstore' ),
 					'slug'  => 'white',
 					'color' => '#FFF',
 				),
+				array(
+					'name'  => __( 'Dark Blue', 'medardstore' ),
+					'slug'  => 'darkblue',
+					'color' => '#208de5',
+				)
 			)
 		);
 
@@ -181,4 +186,37 @@ function add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'add_woocommerce_support' );
 
-?>
+
+
+/*****************************************************************************
+wpmu_posted_on - add dates on single posts
+*****************************************************************************/
+
+function medard_display_date() {
+		 echo '
+		<section class="footer__date">
+			'  . get_the_date("Y") . '
+    </section>
+    ';
+		
+
+}
+
+// add filer
+
+function change_filter($text) {
+  $text = '<h3>' . $text . ' </h3>';
+  return strtoupper($text);
+}
+
+add_filter("wpmu_filter_hook", "change_filter");
+
+
+// // action
+
+// function change_action() {
+//   echo "Hello";
+// }
+
+// add_action("wpmu_before_content", "change_action");
+

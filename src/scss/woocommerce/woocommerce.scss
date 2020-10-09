@@ -1,3 +1,6 @@
+@import "./product.scss";
+@import "./chart";
+
 // removes sidebar on woocommerce pages
 .woocommerce-page {
   .sidebar {
@@ -16,26 +19,14 @@
   }
 }
 
-// show product images
-.woocommerce span.onsale {
-  background-color: orange;
-}
-
-.woocommerce div.product div.images.woocommerce-product-gallery {
-  opacity: 1 !important;
-}
-
-a.button,
-button.button,
-input.button,
-#review_form #submit {
-  background: black;
-}
-
 //  set padding main
 .content-page .site-main {
   padding: 0 $gap/2;
   a {
     color: $main-color-grey;
   }
+}
+
+.woocommerce .content-page {
+  box-shadow: none;
 }

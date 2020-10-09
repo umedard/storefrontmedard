@@ -62,7 +62,7 @@
   a {
     color: $main-color-grey;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all $transition;
     &:hover {
       color: $main-color-blue;
     }
